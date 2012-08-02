@@ -16,7 +16,7 @@
 def triangle(a, b, c)
   sides = [a, b, c].sort
 
-  raise TriangleError if sides[0] + sides[1] <= sides [2]
+  raise TriangleError if sides[0] + sides[1] <= sides[2]
 
   case sides.uniq.size
   when 1 then :equilateral
